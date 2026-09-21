@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LĐN4 – Đề 7 | Quizizz Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <div class="brand">LĐN4 · Đề 7</div>
+        <div class="subtitle">Quizizz thuần Frontend · code by jiren</div>
+      </div>
+      <div class="progress-wrap">
+        <span id="progressText">1 / 85</span>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+    </header>
+
+    <main class="app">
+      <aside class="sidebar">
+        <button class="filter active" data-filter="all">Tất cả <b id="countAll"></b></button>
+        <button class="filter" data-filter="文字・語彙">文字・語彙 <b>1–28</b></button>
+        <button class="filter" data-filter="文法">文法 <b>29–45</b></button>
+        <button class="filter" data-filter="読解">読解 <b>46–57</b></button>
+        <button class="filter" data-filter="聴解">聴解 <b>1–28</b></button>
+        <div class="sidebar-note">
+          <strong>DEV note</strong>
+          <p></p>
+        </div>
+      </aside>
+
+      <section class="quiz-shell">
+        <div id="quiz"></div>
+        <div class="actions">
+          <button id="prevBtn" class="btn secondary">← Câu trước</button>
+          <button id="nextBtn" class="btn">Câu tiếp →</button>
+          <button id="submitBtn" class="btn submit hidden">Nộp bài</button>
+        </div>
+      </section>
+    </main>
+
+    <div id="resultModal" class="modal hidden">
+      <div class="modal-card">
+        <button id="closeModal" class="close">×</button>
+        <div class="result-icon">✓</div>
+        <h2>Hoàn thành!</h2>
+        <div id="score" class="score">0 / 85</div>
+        <p id="scoreText"></p>
+        <button id="reviewBtn" class="btn">Xem lại đáp án</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
