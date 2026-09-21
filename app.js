@@ -83,7 +83,7 @@ const QUIZ_DATA = [
     id: 9,
     section: "文字・語彙",
     type: "single",
-    question: "この 病気の <u>げんいん</u> に ついて <u>けんきゅう</u> した。",
+    question: "この 病気の げんいん に ついて <u>けんきゅう</u> した。",
     options: ["剣究", "研究", "件究", "権究"],
     answer: 2,
     passage: null,
